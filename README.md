@@ -18,6 +18,7 @@ true computational engine of the MLP.
 
 </div>
 ### Loading Dataset
+
 ```python
 audio = r"C:\Users\HP\Desktop\dataset 2\audio_speech_actors_01-24"
 actor_folders = os.listdir(audio) #list files in audio directory
@@ -46,6 +47,7 @@ for i in actor_folders:
 Then we convert our data into data frame and then extract mfcc features , you can refer code for more info.
 
 ## Model 
+
 ```python
 
 import tensorflow as tf
@@ -114,6 +116,7 @@ model_history=model.fit(X_train, y_train,batch_size=32, epochs=50, validation_da
 First we tried it using RNN but accuracy was not that much that (RNN model is commented) and rest is CNN part which gives decent accuracy.
 
 ### Printing Confusion Matrix 
+
 ```python
 cm = confusion_matrix(actual, predictions)
 plt.figure(figsize = (12, 10))
@@ -131,6 +134,7 @@ plt.show()
 <img width="672" alt="Screenshot 2021-05-21 at 8 35 33 PM" src="https://user-images.githubusercontent.com/57126154/119160467-f0deb800-ba75-11eb-8e20-ad84cab7de52.png">
 </div>
 ## Print classification report:
+
 ```python
 print(classification_report(actual, predictions, target_names = ['angry','calm','disgust','fear','happy','neutral','sad','surprise']))
 ```
