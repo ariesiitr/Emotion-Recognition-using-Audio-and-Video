@@ -17,7 +17,7 @@ true computational engine of the MLP.
 <img width="588" alt="Screenshot 2021-05-21 at 9 03 37 PM" src="https://user-images.githubusercontent.com/57126154/119162491-1240a380-ba78-11eb-8ae0-2c4073859782.png">
 
 </div>
-### Loading Dataset
+## Loading Dataset
 
 ```python
 audio = r"C:\Users\HP\Desktop\dataset 2\audio_speech_actors_01-24"
@@ -133,7 +133,7 @@ plt.show()
 <div align="center">
 <img width="672" alt="Screenshot 2021-05-21 at 8 35 33 PM" src="https://user-images.githubusercontent.com/57126154/119160467-f0deb800-ba75-11eb-8e20-ad84cab7de52.png">
 </div>
-## Print classification report:
+### Print classification report:
 
 ```python
 print(classification_report(actual, predictions, target_names = ['angry','calm','disgust','fear','happy','neutral','sad','surprise']))
